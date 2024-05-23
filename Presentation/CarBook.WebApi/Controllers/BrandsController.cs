@@ -9,7 +9,7 @@ namespace CarBook.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BrandController : ControllerBase
+    public class BrandsController : ControllerBase
     {
         private readonly GetBrandQueryHandler _getBrandQueryHandler;
         private readonly GetBrandByIdQueryHandler _getBrandByIdQueryHandler;
@@ -17,7 +17,7 @@ namespace CarBook.WebApi.Controllers
         private readonly UpdateBrandCommandHandler _updateBrandCommandHandler;
         private readonly DeleteBrandCommandHandler _deleteBrandCommandHandler;
 
-        public BrandController(GetBrandQueryHandler getBrandQueryHandler, GetBrandByIdQueryHandler getBrandByIdQueryHandler, CreateBrandCommandHandler createBrandCommandHandler, UpdateBrandCommandHandler updateBrandCommandHandler, DeleteBrandCommandHandler deleteBrandCommandHandler)
+        public BrandsController(GetBrandQueryHandler getBrandQueryHandler, GetBrandByIdQueryHandler getBrandByIdQueryHandler, CreateBrandCommandHandler createBrandCommandHandler, UpdateBrandCommandHandler updateBrandCommandHandler, DeleteBrandCommandHandler deleteBrandCommandHandler)
         {
             _getBrandQueryHandler = getBrandQueryHandler;
             _getBrandByIdQueryHandler = getBrandByIdQueryHandler;

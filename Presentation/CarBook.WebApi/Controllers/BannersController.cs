@@ -8,7 +8,7 @@ namespace CarBook.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BannerController : ControllerBase
+    public class BannersController : ControllerBase
     {
         private readonly GetBannerByIdQueryHandler _getBannerByIdQueryHandler;
         private readonly GetBannerQueryHandler _getBannerQueryHandler;
@@ -16,7 +16,7 @@ namespace CarBook.WebApi.Controllers
         private readonly UpdateBannerCommandHandler _updateBannerCommandHandler;
         private readonly DeleteBannerCommandHandler _deleteBannerCommandHandler;
 
-        public BannerController(GetBannerByIdQueryHandler getBannerByIdQueryHandler, GetBannerQueryHandler getBannerQueryHandler, CreateBannerCommandHandler createBannerCommandHandler, UpdateBannerCommandHandler updateBannerCommandHandler, DeleteBannerCommandHandler deleteBannerCommandHandler)
+        public BannersController(GetBannerByIdQueryHandler getBannerByIdQueryHandler, GetBannerQueryHandler getBannerQueryHandler, CreateBannerCommandHandler createBannerCommandHandler, UpdateBannerCommandHandler updateBannerCommandHandler, DeleteBannerCommandHandler deleteBannerCommandHandler)
         {
             _getBannerByIdQueryHandler = getBannerByIdQueryHandler;
             _getBannerQueryHandler = getBannerQueryHandler;
