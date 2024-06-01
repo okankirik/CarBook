@@ -23,7 +23,6 @@ public class UpdateLocationCommandHandler : IRequestHandler<UpdateLocationComman
     public async Task<Unit> Handle(UpdateLocationCommand request, CancellationToken cancellationToken)
     {
         var value = await _repository.GetByIdAsync(request.Id);
-        value.Id = request.Id;
         value.Name = request.Name;
         await _repository.UpdateAsync(value);
         return Unit.Value;
