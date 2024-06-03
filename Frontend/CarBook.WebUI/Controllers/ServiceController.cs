@@ -8,6 +8,8 @@ public class ServiceController : Controller
 {
     public IActionResult Index()
     {
-        return View();
+        ViewBag.v1 = "Hizmetler";
+		ViewBag.v2 = "Hizmetlerimiz";
+		return View();
     }
 }
