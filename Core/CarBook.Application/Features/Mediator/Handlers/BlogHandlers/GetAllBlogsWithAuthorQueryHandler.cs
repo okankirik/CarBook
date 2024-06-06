@@ -31,7 +31,9 @@ public class GetAllBlogsWithAuthorQueryHandler : IRequestHandler<GetAllBlogsWith
 			CoverImageUrl = x.CoverImageUrl,
 			CreatedDate = x.CreatedDate,
 			AuthorName = x.Author.Name,
-            Description = x.Description
+            Description = x.Description,
+			AuthorDescription = x.Author.Description,
+			AuthorImageUrl = x.Author.ImageUrl
         }).ToList();
 	}
 }

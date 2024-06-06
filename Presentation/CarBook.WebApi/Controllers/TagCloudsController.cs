@@ -52,4 +52,11 @@ public class TagCloudsController : ControllerBase
         await _mediator.Send(new DeleteTagCloudCommand(id));
         return Ok("Etiket bulutu başarıyla silindi");
     }
+
+    [HttpGet("GetTagCloudByBlogId")]
+    public async Task<IActionResult> GetTagCloudByBlogId(int id)
+    {
+        var value = await _mediator.Send(new GetTagCloudByBlogIdQuery(id));
+        return Ok(value);
+    }
 }
