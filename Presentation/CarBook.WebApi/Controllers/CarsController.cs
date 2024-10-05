@@ -59,7 +59,7 @@ public class CarsController : ControllerBase
         return Ok("Araba güncellendi.");
     }
 
-    [HttpDelete]
+    [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteCar(int id)
     {
         await _deleteCarCommandHandler.Handle(new DeleteCarCommand(id));
