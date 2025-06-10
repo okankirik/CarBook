@@ -1,10 +1,10 @@
 ### CarBook Projesi
 
-🚀 Proje Hakkında
+### 🚀 Proje Hakkında
+
 CarBook, bir araç kiralama sisteminin API tarafını geliştirmeye odaklanmıştır. Bu proje, özellikle Onion Mimarisi'nin ASP.NET Core API projelerinde nasıl uygulanacağını öğrenmek isteyen geliştiriciler için harika bir kaynaktır. Temel seviyede ASP.NET Core bilgisine sahip olan ve mimari desenlerini derinlemesine incelemek isteyenler için ideal bir yapı sunar.
 
-✨ Öne Çıkan Özellikler ve Kullanılan Teknolojiler
-Bu projede sadece güçlü bir mimari değil, aynı zamanda birçok popüler tasarım deseni ve modern ASP.NET Core özelliği kullanılmıştır:
+### ✨ Öne Çıkan Özellikler ve Kullanılan Teknolojiler
 
 Mimari: Onion Mimarisi
 Tasarım Desenleri:
@@ -16,7 +16,7 @@ Gerçek Zamanlı İletişim: SignalR ile anlık bildirimler veya gerçek zamanl�
 DTO (Data Transfer Object): Veri transferi için optimize edilmiş nesneler.
 Doğrulama: Fluent Validation ile güçlü ve esnek veri doğrulama kuralları.
 
-🛠️ Kurulum ve Çalıştırma
+### 🛠️ Kurulum ve Çalıştırma
 Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izlemeniz gerekmektedir:
 
 1) Depoyu Klonlayın:
